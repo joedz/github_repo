@@ -1,0 +1,3 @@
+display_name: Project Curation
+short_description: Save impressive projects from GitHub or local repos into a structured, bilingual collection.
+default_prompt: Curate this project into the repository using the project-curation workflow, classify it by one primary category and one primary feature, write a reusable summary note, and update the bilingual index.
