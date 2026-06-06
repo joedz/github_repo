@@ -2,13 +2,14 @@
 
 | 项目总数 | 已覆盖类别 | 最近更新 | 最近加入 |
 |---|---|---|---|
-| 1 | 1 | 2026-06-07 | CodeGraph |
+| 2 | 1 | 2026-06-07 | llm-wiki |
 
 ## AI 工具 / AI Tools
 
 | 项目 | 定位 | 工作流位置 | 接入方式 | 参考方式 | 标签 | 详情 |
 |---|---|---|---|---|---|---|
 | [CodeGraph](https://github.com/colbymchenry/codegraph) | 面向 AI coding agents 的本地语义代码图与 MCP 工具层。 | 代码库理解、重构前影响分析、调用链追踪、变更影响测试。 | CLI 安装后执行 `codegraph install` 接入 agent；项目内执行 `codegraph init -i` 建索引。 | 可参考多 agent MCP 接入、安装器配置写入、运行时工具说明注入、本地索引自动同步。 | `mcp` `agent-tooling` `static-analysis` | [查看详情](categories/ai-tools/developer-experience/codegraph.md) |
+| [llm-wiki](https://github.com/Pratiyush/llm-wiki) | 将 AI 编程助手会话转化为可搜索、互相链接的个人知识库。 | 个人知识管理 / AI 工具链 / 代码理解 | `./setup.sh && ./build.sh && ./serve.sh` | 多适配器架构、双层知识组织（Karpathy 模式）、AI 可消费导出设计（llms.txt/graph.jsonld）、质量治理体系。 | `wiki` `knowledge-base` `ai-agent` `static-site` | [查看详情](categories/ai-tools/documentation/llm-wiki.md) |
 
 ## 前端 / Frontend
 
