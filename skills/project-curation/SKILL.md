@@ -11,17 +11,18 @@ Curate saved projects as practical workflow notes, not as loose bookmarks or gen
 
 ## Repository Contract
 
-- Store public GitHub project notes at `categories/<category>/<feature>/<project-slug>.md`
-- Store local-only project notes at `local_categories/<category>/<feature>/<project-slug>.md`
+- Generate all indexes and category folders inside the current project root, not inside the source repository being collected and not inside the skill folder.
+- Store public GitHub project notes at `<project-root>/categories/<category>/<feature>/<project-slug>.md`
+- Store local-only project notes at `<project-root>/local_categories/<category>/<feature>/<project-slug>.md`
 - Keep all directory names and filenames in English
-- Keep the root `index.md` bilingual in Chinese and English
-- Keep local-only projects in `index_local.md`, not `index.md`
+- Keep public projects in `<project-root>/README.md`
+- Keep local-only projects in `<project-root>/README_LOCAL.md`, not `README.md`
 - Write the project note body in Chinese by default
-- Treat `index.md` as a human-facing browsing page, not as a rules manual
+- Treat `README.md` and `README_LOCAL.md` as human-facing browsing pages, not as rules manuals
 - Keep top-of-index helper text minimal; prefer compact stats or other useful overview information
 - Give each project exactly one primary storage path
 - Record other strengths as `secondary_features` inside the note
-- Never commit `index_local.md` or `local_categories/` to a public repository
+- Never commit `README_LOCAL.md` or `local_categories/` to a public repository
 
 ## Inputs
 
@@ -36,15 +37,16 @@ If both are available, prefer the GitHub URL as the primary source and use the l
 
 Route entries by source type before writing files:
 
-- GitHub repository URL intended for public sharing: update `index.md` and `categories/`
-- Local repository path, private project, or locally synchronized fork that should not be published: update `index_local.md` and `local_categories/`
+- GitHub repository URL intended for public sharing: update `<project-root>/README.md` and `<project-root>/categories/`
+- Local repository path, private project, or locally synchronized fork that should not be published: update `<project-root>/README_LOCAL.md` and `<project-root>/local_categories/`
 
 For local entries, the `项目` column may link to a local path or to the user's own remote URL when that helps recognition, but the note file itself must stay under `local_categories/`.
 
 Ensure `.gitignore` includes:
 
 ```gitignore
-index_local.md
+README_LOCAL.md
+readme_local.md
 local_categories/
 ```
 
@@ -114,14 +116,14 @@ status: active
 
 ## Index Update Rules
 
-After writing the note, update the correct index:
+After writing the note, update the correct README file in the current project root:
 
-- Public entries: `index.md`
-- Local-only entries: `index_local.md`
+- Public entries: `<project-root>/README.md`
+- Local-only entries: `<project-root>/README_LOCAL.md`
 
 The index should support fast human scanning.
 
-Keep explanation about repository rules minimal inside `index.md`. Put the attention on project summaries and compact overview information.
+Keep explanation about repository rules minimal inside README files. Put the attention on project summaries and compact overview information.
 
 Organize the index by category. Under each category, use one Markdown table with these columns:
 
