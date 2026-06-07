@@ -2,7 +2,7 @@
 
 | 项目总数 | 已覆盖类别 | 最近更新 | 最近加入 |
 |---|---|---|---|
-| 8 | 3 | 2026-06-07 | MarkItDown |
+| 10 | 4 | 2026-06-07 | MoneyPrinterTurbo |
 
 ## AI 工具 / AI Tools
 
@@ -35,7 +35,13 @@
 
 | 项目 | 定位 | 工作流位置 | 接入方式 | 参考方式 | 标签 | 详情 |
 |---|---|---|---|---|---|---|
-| [stop-slop](https://github.com/hardikpandya/stop-slop) | 消除 AI 生成文本中“机器味”的 skill 文件。 | 内容创作阶段润色、质量把关阶段 AI 模式过滤、Agent 工具链写作任务接入。 | `npx skills add https://github.com/hardikpandya/stop-slop --skill stop-slop`；或复制 `SKILL.md` 到项目。 | 可参考 Skill 文件结构、评分卡设计、短语黑名单分类组织、trigger 元数据设计、before/after 示例格式。 | `ai-writing` `skill` `content-quality` `prose` `llm` `writing-improvement` | [查看详情](categories/ai-tools/prompt-ops/stop-slop.md) |
+| [stop-slop](https://github.com/hardikpandya/stop-slop) | 消除 AI 生成文本中"机器味"的 skill 文件。 | 内容创作阶段润色、质量把关阶段 AI 模式过滤、Agent 工具链写作任务接入。 | `npx skills add https://github.com/hardikpandya/stop-slop --skill stop-slop`；或复制 `SKILL.md` 到项目。 | 可参考 Skill 文件结构、评分卡设计、短语黑名单分类组织、trigger 元数据设计、before/after 示例格式。 | `ai-writing` `skill` `content-quality` `prose` `llm` `writing-improvement` | [查看详情](categories/ai-tools/prompt-ops/stop-slop.md) |
+
+### 上下文工程 / Context Engineering
+
+| 项目 | 定位 | 工作流位置 | 接入方式 | 参考方式 | 标签 | 详情 |
+|---|---|---|---|---|---|---|
+| [Headroom](https://github.com/chopratejas/headroom) | AI agent 上下文压缩层，6 算法协同压缩 60–95% token，支持可逆 CCR 和跨 agent 记忆共享。 | 上下文压缩、Token 成本优化、跨 agent 记忆、失效模式挖掘写入 CLAUDE.md。 | `pip install "headroom-ai[all]"`；`headroom wrap claude` 包装 agent；`headroom proxy --port 8787` 零改动代理。 | 可参考多算法路由架构、Pipeline 生命周期设计、MCP 工具层接口设计、SharedContext 跨 agent 内存、CCR 可逆压缩实现。 | `context-compression` `token-optimization` `mcp` `proxy` `agent-tooling` `python` `typescript` | [查看详情](categories/ai-tools/context-engineering/headroom.md) |
 
 ## 前端 / Frontend
 
@@ -48,3 +54,11 @@
 | 项目 | 定位 | 工作流位置 | 接入方式 | 参考方式 | 标签 | 详情 |
 |---|---|---|---|---|---|---|
 | [MarkItDown](https://github.com/microsoft/markitdown) | 微软开源的多格式文件转 Markdown CLI 工具，专为 LLM pipeline 设计。 | 文档预处理、文件统一转文本、RAG pipeline 输入。 | `pip install 'markitdown[all]'`；或 Docker。 | Converter 模块分离、插件系统设计、最窄 API 调用规范。 | `markdown` `python` `document-conversion` | [查看详情](categories/cli/documentation/markitdown.md) |
+
+## 自动化 / Automation
+
+### 视频生成 / Video Generation
+
+| 项目 | 定位 | 工作流位置 | 接入方式 | 参考方式 | 标签 | 详情 |
+|---|---|---|---|---|---|---|
+| [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | AI 一键生成高清短视频工具，全自动生成文案、素材、字幕、背景音乐，合成竖屏/横屏视频。 | 短视频内容创作、批量视频生产、TikTok/抖音/YouTube Shorts pipeline。 | `git clone` + `docker-compose up`；或 `uv sync --frozen` 本地部署；WebUI http://127.0.0.1:8501；API http://127.0.0.1:8080/docs。 | MVC 架构设计、多 provider 接入模式、Streamlit + FastAPI 双入口、字幕 pipeline 方案对比（edge vs whisper）。 | `video-generation` `automation` `ai-video` `python` `streamlit` `fastapi` | [查看详情](categories/automation/video-generation/money-printer-turbo.md) |

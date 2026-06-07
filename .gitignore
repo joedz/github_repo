@@ -6,3 +6,5 @@ readme_local.md
 local_categories/
 superpowers/
 .opencode/
+.agent/
+.claude/
