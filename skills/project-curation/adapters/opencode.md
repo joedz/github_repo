@@ -15,9 +15,10 @@ Tell the agent to follow the `project-curation` repository workflow and point it
 ```text
 Use the project-curation workflow in this repository.
 Input: <GitHub URL or local repository path>
-Classify the project with one primary category and one primary feature.
-Create or update the project note under categories/<category>/<feature>/<project-slug>.md.
-Update the bilingual root index.md.
+Mode: <entry-curation or explicit reclassification>
+Classify the project by core workflow. If it belongs in ai-tools, choose its primary AI role.
+Create, update, or explicitly reclassify the canonical note under categories/<category>/<feature-or-role>/<project-slug>.md.
+If reclassifying, move the note when needed, remove stale duplicates, and update the bilingual root index.md.
 Mark inference clearly when evidence is incomplete.
 ```
 

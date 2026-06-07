@@ -4,7 +4,7 @@ source_type: github
 repo_url: "https://github.com/colbymchenry/codegraph"
 local_path: ""
 category: "ai-tools"
-feature: "developer-experience"
+feature: "code-understanding"
 secondary_features: ["performance", "code-architecture", "documentation"]
 tags: ["mcp", "code-intelligence", "knowledge-graph", "static-analysis", "agent-tooling"]
 added_at: 2026-06-06

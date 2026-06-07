@@ -4,7 +4,7 @@ source_type: github
 repo_url: "https://github.com/EveryInc/compound-engineering-plugin"
 local_path: ""
 category: ai-tools
-feature: developer-experience
+feature: agent-orchestration
 secondary_features: ["agent", "multi-agent", "skills", "workflow", "code-review", "debugging"]
 tags: ["agent", "skills", "workflow", "multi-agent", "claude-code-plugin", "codex", "copilot"]
 added_at: 2026-06-07
