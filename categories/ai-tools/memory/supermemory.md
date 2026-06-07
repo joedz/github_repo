@@ -4,7 +4,7 @@ source_type: github
 repo_url: "https://github.com/supermemoryai/supermemory"
 local_path: ""
 category: ai-tools
-feature: developer-experience
+feature: memory
 secondary_features: ["performance", "extensibility", "api-design", "observability"]
 tags: ["memory", "rag", "agent-memory", "mcp", "typescript", "postgres", "cloudflare-workers"]
 added_at: 2026-06-07

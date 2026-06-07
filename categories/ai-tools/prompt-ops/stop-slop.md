@@ -4,7 +4,7 @@ source_type: github
 repo_url: "https://github.com/hardikpandya/stop-slop"
 local_path: ""
 category: "ai-tools"
-feature: "ux"
+feature: "prompt-ops"
 secondary_features: ["documentation", "developer-experience"]
 tags: ["ai-writing", "skill", "content-quality", "prose", "llm", "writing-improvement"]
 added_at: 2026-06-07

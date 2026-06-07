@@ -9,7 +9,7 @@ Use this adapter for agents that support plain prompt files, system instructions
 
 ## Required Outputs
 
-- one canonical note at `categories/<category>/<feature>/<project-slug>.md`
+- one canonical note at `categories/<category>/<feature-or-role>/<project-slug>.md`
 - an updated bilingual `index.md`
 
 ## Prompt Skeleton
@@ -24,10 +24,11 @@ Read the workflow rules in:
 
 Then:
 1. Inspect the provided repository URL or local path
-2. Choose one primary category and one primary feature
-3. Write or update the canonical note
-4. Update the bilingual root index.md
-5. Separate direct evidence from inference
+2. Detect whether this is entry curation or explicit reclassification of existing entries
+3. Choose one primary category by core workflow and, if needed, one primary AI role
+4. Write, update, or move the canonical note without leaving duplicates
+5. Update the bilingual root index.md
+6. Separate direct evidence from inference
 ```
 
 ## Consistency Rule

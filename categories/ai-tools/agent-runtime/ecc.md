@@ -4,7 +4,7 @@ source_type: github
 repo_url: "https://github.com/affaan-m/ECC"
 local_path: ""
 category: ai-tools
-feature: developer-experience
+feature: agent-runtime
 secondary_features: ["security", "multi-harness", "skills-system", "memory-persistence", "continuous-learning"]
 tags: ["agent", "harness", "workflow", "multi-harness", "skills", "security", "llm"]
 added_at: 2026-06-07

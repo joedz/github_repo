@@ -4,7 +4,7 @@ source_type: github
 repo_url: "https://github.com/Lum1104/Understand-Anything"
 local_path: ""
 category: ai-tools
-feature: code-architecture
+feature: code-understanding
 secondary_features: ["developer-experience"]
 tags: ["knowledge-graph", "code-understanding", "multi-agent", "claude-code-plugin", "visualization"]
 added_at: 2026-06-07
