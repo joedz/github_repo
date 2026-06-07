@@ -2,7 +2,7 @@
 
 | 项目总数 | 已覆盖类别 | 最近更新 | 最近加入 |
 |---|---|---|---|
-| 8 | 3 | 2026-06-07 | markitdown |
+| 9 | 3 | 2026-06-07 | Headroom |
 
 ## AI 工具 / AI Tools
 
@@ -14,6 +14,8 @@
 | [Supermemory](https://github.com/supermemoryai/supermemory) | AI 记忆与上下文引擎，为 AI 应用提供持久化记忆层，自动提取事实、构建用户画像、处理知识更新与矛盾、自动遗忘过期信息。 | AI agent/应用的记忆层接入、多轮对话上下文管理、用户偏好持久化、RAG + 个性化上下文混合检索。 | MCP：`npx -y install-mcp@latest https://mcp.supermemory.ai/mcp --client claude --oauth=yes`；npm：`npm install supermemory`；MCP 手动配置或 API key 接入。 | 可参考 Memory 引擎设计（fact extraction、contradiction resolution、temporal forgetting）、混合搜索架构、用户画像分层设计、MCP 协议实现、连接器 webhooks 架构。 | `memory` `rag` `agent-memory` `mcp` `typescript` `postgres` | [查看详情](categories/ai-tools/developer-experience/supermemory.md) |
 | [Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin) | AI coding agent 复利工作流系统，37 skills + 51 agents，支持 10+ 平台。 | 规划→执行→审查→知识沉淀全流程，brainstorm→plan→work→review→compound 循环。 | `/plugin marketplace add` 安装；或 `bunx @every-env/compound-plugin install` 跨平台安装。 | 多 agent 调度架构、manifest 驱动跨平台安装、复利工作流设计、Strategy 锚定模式。 | `agent` `skills` `workflow` `multi-agent` | [查看详情](categories/ai-tools/developer-experience/compound-engineering.md) |
 | [stop-slop](https://github.com/hardikpandya/stop-slop) | 消除 AI 生成文本中"机器味"的 skill 文件，通过短语黑名单、公式化结构规则和 5 维度评分卡去除 throat-clearing、被动语态、模糊表述等 AI tells。 | 内容创作阶段润色、质量把关阶段 AI 模式过滤、Agent 工具链写作任务接入。 | `npx skills add https://github.com/hardikpandya/stop-slop --skill stop-slop`；或复制 SKILL.md 到项目；或将 SKILL.md 包含在 system prompt 中。 | 可参考 Skill 文件结构（SKILL.md + references/ 分离）、评分卡设计（5 维度 + 阈值）、短语黑名单分类组织、trigger 元数据设计、before/after 示例格式。 | `ai-writing` `skill` `content-quality` `prose` `llm` `writing-improvement` | [查看详情](categories/ai-tools/ux/stop-slop.md) |
+| [Harness](https://github.com/revfactory/harness) | Claude Code 的 meta-skill，自动将领域描述生成为 agent 团队和技能，支持 6 种团队架构模式。 | 复杂任务分解、agent 团队自动配置、多 agent 协作流程设计。 | `/plugin marketplace add revfactory/harness` + `/plugin install harness@harness`；或复制 `skills/harness` 到 `~/.claude/skills/harness`。 | 可参考 6 种预定义 agent 团队架构模式、渐进式技能生成、inter-agent 编排协议设计。 | `claude-code` `claude-code-plugin` `harness` `multi-agent` `agent-team` | [查看详情](categories/ai-tools/developer-experience/harness.md) |
+| [Headroom](https://github.com/chopratejas/headroom) | AI coding agents 的上下文压缩层，60–95% token 节省，支持多 Agent记忆共享和 CCR 可逆压缩。 | AI agent 调用阶段作为 prompt 前置处理层；多 Agent 协作场景共享压缩记忆；`headroom learn` 挖掘失败模式。 | `pip install "headroom-ai[all]"` 安装；`headroom wrap claude` 封装 agent；`headroom proxy --port 8787` 零代码改动代理；MCP：`headroom mcp install`。 | Pipeline 扩展模式（on_pipeline_event）、多压缩算法路由设计（ContentRouter）、Agent wrap 封装、Cross-agent memory 共享架构。 | `context-compression` `token-optimization` `mcp` `multi-agent` `llm-efficiency` | [查看详情](categories/ai-tools/developer-experience/headroom.md) |
 
 ## 前端 / Frontend
 
@@ -25,7 +27,7 @@
 
 | 项目 | 定位 | 工作流位置 | 接入方式 | 参考方式 | 标签 | 详情 |
 |---|---|---|---|---|---|---|
-| [MarkItDown](https://github.com/microsoft/markitdown) | 微软开源的多格式文件转 Markdown CLI 工具，专为 LLM pipeline 设计 | 文档预处理、文件统一转文本、RAG pipeline 输入 | `pip install 'markitdown[all]'`；或 Docker | Converter 模块分离、插件系统设计、最窄 API 调用规范 | `markdown` `python` `document-conversion` | [查看详情](categories/cli/documentation/markitdown.md) |
+| 暂无 | - | - | - | - | - | - |
 
 ## 基础设施 / Infrastructure
 
